@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Password Generator</title>
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- remix Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body class="lato-regular">
+    <div class="container">
+        <h2 class="lato-black">Password Generator</h2>
+        <div class="wrapper">
+            <div class="input-box lato-regular">
+                <input type="text" disabled class="lato-bold">
+                <span class="material-symbols-rounded" id="copy"> <i class="ri-file-copy-line"></i></span>
+            </div>
+
+            <div class="password-indicator"></div>
+            <div class="password-length">
+                <div class="deatails">
+                    <label class="title">Longitud de contraseña</label>
+                    <span></span>
+                </div>
+                <input type="range" min="1" max="30" step="1" value="15">
+            </div>
+            <div class="passsword-setting">
+                <label class="title">opciones para la contraseña</label>
+                <ul class="options">
+                    <li class="option">
+                        <input type="checkbox" id="lowercase" checked>
+                        <label for="lowercase">Minúscula (a-z)</label>
+                    </li>
+                    <li class="option">
+                        <input type="checkbox" id="uppercase">
+                        <label for="uppercase">Mayusculas (A-Z)</label>
+                    </li>
+                    <li class="option">
+                        <input type="checkbox" id="numbers">
+                        <label for="numbers">Numeros (0-9)</label>
+                    </li>
+                    <li class="option">
+                        <input type="checkbox" id="symbols">
+                        <label for="symbols">Simbolos (!-$-^+)</label>
+                    </li>
+                    <li class="option">
+                        <input type="checkbox" id="exc-duplicate">
+                        <label for="exc-duplicate">Excluir caracteres Duplicados</label>
+                    </li>
+                    <li class="option">
+                        <input type="checkbox" id="spaces">
+                        <label for="spaces">Incluir espacios</label>
+                    </li>
+                </ul>
+
+            </div>
+            <button class="generate-btn">Generar contraseña</button>
+
+        </div>
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
