@@ -1,14 +1,10 @@
-.lato-thin {
-    font-family: "Lato", sans-serif;
-    font-weight: 100;
+.protest-revolution-regular {
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 400;
     font-style: normal;
 }
 
-.lato-light {
-    font-family: "Lato", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
+
 
 .lato-regular {
     font-family: "Lato", sans-serif;
@@ -22,41 +18,7 @@
     font-style: normal;
 }
 
-.lato-black {
-    font-family: "Lato", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-}
 
-.lato-thin-italic {
-    font-family: "Lato", sans-serif;
-    font-weight: 100;
-    font-style: italic;
-}
-
-.lato-light-italic {
-    font-family: "Lato", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-}
-
-.lato-regular-italic {
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-}
-
-.lato-bold-italic {
-    font-family: "Lato", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-}
-
-.lato-black-italic {
-    font-family: "Lato", sans-serif;
-    font-weight: 900;
-    font-style: italic;
-}
 
 * {
     box-sizing: border-box;
@@ -66,21 +28,36 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(60, 60, 120, 1) 53%, rgba(13, 39, 112, 1) 100%);
+    flex-wrap: wrap;
+    background: #00B4DB;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #0083B0, #00B4DB);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #0083B0, #00B4DB);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     height: 100vh;
 }
 
 .container {
     width: 420px;
-    background-color: aliceblue;
+    background-color: white;
     border-radius: .3rem;
 }
 
 .container h2 {
-    font-size: 1.31rem;
+    font-size: 2.31rem;
+    text-align: center;
     padding: 1rem 1.17rem;
     border-bottom: 1px solid #cfe0e0;
+    background: #ff00cc;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #333399, #ff00cc);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #333399, #ff00cc);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-clip: text;
+    color: transparent;
 }
 
 .wrapper {
@@ -132,17 +109,36 @@ body {
 
 .password-indicator#weak::before {
     width: 20%;
-    background-color: #cc0d0d;
+    background: #F00000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #DC281E, #F00000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #DC281E, #F00000);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .password-indicator#medium::before {
     width: 50%;
-    background-color: #f1c80b;
+    background: #F2994A;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F2C94C, #F2994A);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .password-indicator#strong::before {
     width: 100%;
-    background-color: #0044ff;
+    background: #43cea2;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #185a9d, #43cea2);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #185a9d, #43cea2);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
 }
 
 .wrapper .password-length {
@@ -198,7 +194,14 @@ body {
     font-size: 1.06rem;
     padding: 0.54rem 0;
     margin: 0.84rem 0 1.3rem;
-    background-color: #1c76c0;
+    background: #fc00ff;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #00dbde, #fc00ff);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #00dbde, #fc00ff);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
     color: #fff;
     outline: none;
     border-radius: 4px;
@@ -207,4 +210,10 @@ body {
 
 .ri-checkbox-multiple-line {
     color: #0044ff;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    color: white;
 }
